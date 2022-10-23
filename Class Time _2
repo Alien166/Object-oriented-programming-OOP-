@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class Time
+{
+ public:    
+    int h;
+    int m;
+    int s;
+};    
+
+int main()
+{
+Time t;
+cout<<"Enter hour :";
+cin>>t.h;
+cout<<"Enter minute :";
+cin>>t.m;
+cout<<"Enter second :";
+cin>>t.s;
+cout<<t.h<<":"<<t.m<<":"<<t.s;
+    return 0;
+}
