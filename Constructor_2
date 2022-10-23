@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+class Time
+{
+ private:
+ int h,m,s;
+ public:
+  Time()
+  {
+      h=m=s=0;
+  }
+  public:
+   Time(int a, int b, int c)
+   {
+      h=a;   m=b;  s=c; 
+   }
+    
+ public:    
+    void set()
+    {
+        cout<<"Enter hour :"; cin>>h;
+        cout<<"Enter minute :"; cin>>m;
+        cout<<"Enter second :"; cin>>s;
+        
+    }
+    void get()
+    {
+        cout<<h<<":"<<m<<":"<<s;
+        
+    }
+};    
+
+int main()
+{
+Time t1,t2(1,2,3);
+t1.get();
+t1.set();
+t1.get();
+t2.get();
+t2.set();
+t2.get();
+    return 0;
+}
