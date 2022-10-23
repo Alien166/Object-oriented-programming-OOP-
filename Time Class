@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+class Time
+{
+ public:    
+    int h;
+    int m;
+    int s;
+};    
+
+int main()
+{
+Time t;
+t.h=10;
+t.m=20;
+t.s=30;
+cout<<t.h<<":"<<t.m<<":"<<t.s;
+ 
+    return 0;
+}
