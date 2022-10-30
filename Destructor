@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class Time
+{
+    public:
+    Time()
+    {
+        h=m=s=1;
+        get();
+    }
+
+void get()
+{
+    cout<<h<<":"<<m<<":"<<s;
+}
+
+~Time()
+{
+    h=m=s=0;
+    get();
+}
+    private:
+    int h,m,s;
+    
+};
+main()
+{
+ Time *t1=new Time();
+ cout<<endl;
+ delete t1;
+ 
+    return 0;
+}
