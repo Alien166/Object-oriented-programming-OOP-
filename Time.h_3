@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    Time t;
+    t.PrintUniversal();
+    t.set();
+    t.PrintStandard();
+    
+    return 0;
+}
