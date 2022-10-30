@@ -1,0 +1,29 @@
+#include"Time.h"
+class Time 
+{
+    public:
+   Time::Time()
+    {
+        h=m=s=0;
+    }
+    void Time::set()
+    {
+        cout<<"Enter hour"; cin>>h;
+        cout<<"Enter min"; cin>>m;
+        cout<<"Enter sec"; cin>>s;
+
+        
+    }
+    void Time::PrintUniversal()
+    {
+        cout<<h<<":"<<m<<":"<<s;
+    }
+    void Time::PrintStandard()
+    {
+        cout<<((h==0||h==12)?12:h%12)<<":"<<m<<":"<<s<<(h<12?"AM":"PM");
+        
+    }
+    private:
+    int h,m,s;
+    
+};
