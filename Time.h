@@ -1,4 +1,4 @@
-#include"Time.h"
+#include<iostream>
 class Time 
 {
     public:
