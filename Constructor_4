@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class Time
+{
+    public:
+    Time() //default constructor
+    {
+        h=m=s=0;
+    }
+void set()
+{
+    cout<<"Enter Hour";cin>>h;
+    cout<<"Enter min";cin>>m;
+    cout<<"Enter sec";cin>>s;
+}
+void get()
+{
+    cout<<h<<":"<<m<<":"<<s;
+}
+  
+    
+    private:
+    int h,m,s;
+    
+};
+main()
+{
+ Time t1;
+ Time *t2=&t1;
+ Time &t3=t1;
+ t1.get();
+ t2->set();
+ t2->get();
+ t3.set();
+ t3.get();
+ 
+    return 0;
+}
