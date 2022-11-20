@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+#include<conio.h>
+using namespace std;
+class vehicle
+{
+public:
+    vehicle()
+    {
+        cout<<"A"<<endl;
+    }
+    ~vehicle()
+    {
+        cout<<"B"<<endl;
+    }
+};
+class FourWheeler:public vehicle
+{
+public:
+    FourWheeler()
+    {
+        cout<<"C"<<endl;
+    }
+    ~FourWheeler()
+    {
+        cout<<"D"<<endl;
+    }
+};
+class car:public FourWheeler
+{
+public:
+    car()
+    {
+        cout<<"E"<<endl;
+    }
+    ~car()
+    {
+        cout<<"f"<<endl;
+    }
+};
+int main()
+{
+   car *obj=new car;
+   delete obj;
+    getch();
+    return 0;
+}
