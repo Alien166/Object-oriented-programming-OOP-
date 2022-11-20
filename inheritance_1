@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+class parent
+{
+public:
+    int p;
+};
+class child:public parent //inheritance from class parent
+{
+public:
+    int q;
+};
+int main()
+{
+    child obj;
+    obj.p=10;
+    obj.q=20;
+    cout<<"Child id is"<<obj.q<<endl;
+    cout<<"parent id is"<<obj.p<<endl;
+    return 0;
+}
