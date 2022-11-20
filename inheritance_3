@@ -17,7 +17,7 @@ public:
         cout<<"This is a four wheeler"<<endl;
     }
 };
-class car:public vehicle,public FourWheeler{};
+class car:public vehicle,public FourWheeler{};multiple class
 int main()
 {
     car obj;
