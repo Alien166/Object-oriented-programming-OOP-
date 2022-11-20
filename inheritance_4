@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+#include<conio.h>
+using namespace std;
+class vehicle
+{
+public:
+    vehicle()
+    {
+        cout<<"This is a vehicle"<<endl;
+    }
+};
+class FourWheeler:public vehicle
+{
+public:
+    FourWheeler()
+    {
+        cout<<"This ia s fourwheeler"<<endl;
+    }
+};
+class car:public FourWheeler //multilevel class
+{
+public:
+    car()
+    {
+        cout<<"This is a car"<<endl;
+    }
+};
+int main()
+{
+    car obj;
+    getch();
+    return 0;
+}
