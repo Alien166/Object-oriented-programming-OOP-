@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+#include<conio.h>
+using namespace std;
+class vehicle
+{
+public:
+    vehicle()
+    {
+        cout<<"This is a vehicle"<<endl;
+    }
+};
+class fare:public vehicle
+{
+public:
+    fare()
+    {
+        cout<<"This ia a fare"<<endl;
+    }
+};
+class car:public vehicle
+{
+public:
+    car()
+    {
+        cout<<"This is a car"<<endl;
+    }
+};
+class bus:public car,public fare{};
+int main()
+{
+bus obj;
+    return 0;
+}
