@@ -1,0 +1,48 @@
+#include<bits/stdc++.h>
+#include<conio.h>
+using namespace std;
+class shape
+{
+protected:
+    int area;
+public:
+    void get_area();
+};
+class threeShape:public shape
+{
+protected:
+    float volume;
+public:
+    void get_volume();
+};
+class spahre:public threeShape
+{
+private:
+    float r;
+public:
+    spahre(int new_raduis)
+    {
+        r=new_raduis;
+        volume=(1/4)*pow(r,3);
+        area=4+pow(r,2);
+    }
+    get_volume(){
+        cout<<"This is a volume"<<volume;
+    }
+    get_area(){
+        cout<<"This is a area"<<area;
+    }
+
+};
+int main()
+{
+    float r; 
+    cout<<"Enter the raduis"<<endl;
+    cin>>r;
+    spahre s1(r);
+    s1.get_volume();
+    cout<<endl;
+    s1.get_area();
+
+    return 0;
+}
