@@ -1,0 +1,76 @@
+#include<bits/stdc++.h>
+using namespace std;
+class person
+{
+protected:
+    char name[40];
+public:
+    void get_Name()
+    {
+        cout<<"Enter name"<<endl; cin>>name;
+    }
+    void put_Name()
+    {
+        cout<<"Name is = "<<name<<endl;
+    }
+    virtual void get_Data()=0;
+    virtual bool isOutstanding()=0;
+};
+class student :public person {
+private:
+    float gpa;
+public:
+    void get_Data() {
+        person::get_Name();
+        cout << "Enter student gpa" ;   cin >> gpa;
+    }
+
+    bool isOutstanding() {
+        return (gpa > 3.5) ? true : false;
+    }
+};
+class profosser:public person
+{
+private:
+    int numper;
+public:
+    void get_Data()
+    {
+        person::get_Name();
+        cout<<"Enter number of professer's publications";  cin>>numper;
+    }
+    bool isOutstanding()
+    {
+        return (numper>100)? true: false;
+    }
+};
+
+int main()
+{
+person* ptrson[100];
+int n=0;
+char choise;
+do {
+    cout << "Enter students of professer (s/p) " << endl;
+    cin >> choise;
+    if (choise == 's')
+    {
+        ptrson[n] = new student;
+    }
+    else
+    {
+        ptrson[n] = new profosser;
+        ptrson[n++]->get_Data();
+        cout << "Enter anthor (y/n)" << endl;
+        cin >> choise;
+    }
+}
+    while (choise == 'y');
+    for (int i = 0; i < n; i++) {
+        ptrson[i]->put_Name();
+        if (ptrson[i]->isOutstanding())
+            cout << "This person is outstanding " << endl;
+    }
+
+    return 0;
+}
