@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+class shape
+{
+protected:
+    int widht,height;
+public:
+    shape(int a,int b)
+    {
+        widht=a;
+        height=b;
+    }
+    //pure virtual function
+    virtual int area()=0;
+};
