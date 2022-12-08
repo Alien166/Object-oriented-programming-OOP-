@@ -1,0 +1,7 @@
+public class welcome3
+{
+    public static void main(string[] args)
+    {
+        system.out.println("%s\n%s\n","Welcome to ","java programming"); //display multipe lines
+    }
+}
