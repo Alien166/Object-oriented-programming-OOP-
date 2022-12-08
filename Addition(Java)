@@ -1,0 +1,17 @@
+public class Addition
+{
+    public static void main(string[] args)
+    {
+        Scanner input =new Scanner(system.in);//create scanner to obtain input from command window
+        int num1;
+        int num2;
+        int sum;
+        system.out.print("Enter first number");//prompt
+        num1=input.nextInt();//read first number from user
+        system.out.print("Enter second number");//prompt
+        num2=input.nextInt();//read second number from user
+        sum=num1+num2;
+       system.out.printf("sum is %d\n",sum);//display sum
+
+    }
+}
