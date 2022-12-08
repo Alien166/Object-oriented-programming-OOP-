@@ -1,0 +1,7 @@
+public class welcome3
+{
+    public static void main(string[] args)
+    {
+        system.out.println("Welcome\to\java\programming");
+    }
+}
