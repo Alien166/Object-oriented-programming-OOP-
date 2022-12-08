@@ -1,0 +1,10 @@
+public class welcome2
+{
+    public static void main(string[] args)
+    {
+        system.out.println("Welcome to");
+        system.out.println("java programming");
+
+    } 
+    
+}
